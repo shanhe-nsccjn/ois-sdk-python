@@ -20,7 +20,7 @@ Any significant improvement should be documented as a GitHub [issue](https://git
 
 1. Fork it ( https://github.com/shanhe-nsccjn/ois-sdk-python/fork )
 2. Create your feature branch (`git checkout -b new-feature`)
-3. If service code changed, update templates and use [snips](https://github.com/yunify/snips) to generate code
+3. If service code changed, update templates and use [snips](https://github.com/shanhe/snips) to generate code
 4. Commit your changes (`git commit -asm 'Add some feature'`)
 5. Push to the branch (`git push origin new-feature`)
 6. Create a new Pull Request
