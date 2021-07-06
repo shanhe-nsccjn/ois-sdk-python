@@ -13,7 +13,7 @@ setup(
     name='ois-sdk',
     version=__version__,
     description='The official OIS SDK for the Python programming language.',
-    long_description=open('README.md').read(),
+    long_description=open('README.md', 'rb').read().decode('utf-8'),
     long_description_content_type='text/markdown',
     author='shanhe SDK Group',
     url='https://github.com/shanhe-nsccjn/ois-sdk-python',
