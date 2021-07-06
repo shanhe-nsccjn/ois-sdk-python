@@ -25,7 +25,7 @@ default_config_file_content = (
     '# OIS Services Configuration\n'
     'access_key_id: ""\n'
     'secret_access_key: ""\n'
-    'host: "ois.com"\n'
+    'host: "jn1.is.shanhe.com"\n'
     'port: 443\n'
     'protocol: "https"\n'
     'connection_retries: 3\n'
@@ -78,7 +78,7 @@ class Config:
 
     def get_user_config_file_path(self):
         home = os.environ.get("HOME")
-        if sys.platform == "windows":
+        if sys.platform == "windows" or sys.platform == "win32" or sys.platform == "win64":
             home = os.environ.get("HOMEDRIVE") + os.environ.get("HOMEPATH")
             if home == "":
                 home = os.environ.get("USERPROFILE")
@@ -105,7 +105,7 @@ class Config:
         return self
 
     def load_user_config(self):
-        user_config_file_path = os.environ.get("QINGSTOR_CONFIG_PATH")
+        user_config_file_path = os.environ.get("OIS_CONFIG_PATH")
         if not user_config_file_path:
             user_config_file_path = self.get_user_config_file_path()
         if os.path.exists(user_config_file_path):
@@ -121,7 +121,7 @@ class Config:
 
     def load_from_env(self):
         for item in config_items_map:
-            key = f"QINGSTOR_{item.upper()}"
+            key = f"OIS_{item.upper()}"
             v = os.environ.get(key)
             if v is not None:
                 setattr(self, item, v)
