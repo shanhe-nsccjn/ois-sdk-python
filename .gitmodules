@@ -1,0 +1,6 @@
+[submodule "scenarios/features"]
+	path = scenarios/features
+	url = https://github.com/shanhe-nsccjn/ois-sdk-test-scenarios
+[submodule "specs/ois"]
+	path = specs/ois
+	url = https://github.com/shanhe-nsccjn/ois-api-specs.git
