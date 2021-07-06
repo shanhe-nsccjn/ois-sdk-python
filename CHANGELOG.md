@@ -229,7 +229,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ### Added
 
-- Provide Official Qingstor SDK for Python
+- Provide Official OIS SDK for Python
 
 [2.6.0]: https://github.com/shanhe-nsccjn/ois-sdk-python/compare/2.5.0...2.6.0
 [2.5.0]: https://github.com/shanhe-nsccjn/ois-sdk-python/compare/2.4.0...2.5.0
