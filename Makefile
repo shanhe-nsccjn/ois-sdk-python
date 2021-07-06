@@ -22,7 +22,7 @@ generate:
 		echo "ERROR: Command \"snips\" not found."; \
 	fi
 	snips \
-		-f ./specs/ois/2016-01-06/swagger/api_v2.0.json \
+		-f ./specs/ois/2021-01-06/swagger/api_v2.0.json \
 		-t="./template" \
 		-o="./ois/sdk/service"
 	rm ./ois/sdk/service/object.py

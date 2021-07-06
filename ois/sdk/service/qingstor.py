@@ -1,5 +1,5 @@
 # +-------------------------------------------------------------------------
-# | Copyright (C) 2016 Yunify, Inc.
+# | Copyright (C) 2021 shanhe, Inc.
 # +-------------------------------------------------------------------------
 # | Licensed under the Apache License, Version 2.0 (the "License");
 # | you may not use this work except in compliance with the License.
@@ -25,7 +25,7 @@ from .bucket import Bucket
 from ..request import Request
 from ..unpack import Unpacker
 
-# OIS provides OIS Service API (API Version 2016-01-06)
+# OIS provides OIS Service API (API Version 2021-01-06)
 
 
 class OIS(object):
